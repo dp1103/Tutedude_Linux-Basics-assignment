@@ -1,0 +1,33 @@
+# Linux Basics Assignment Commands with Explanations
+
+# 1. Creating and Renaming Files/Directories
+mkdir test_dir        # Creates a directory named 'test_dir'
+cd test_dir           # Moves inside the directory
+touch example.txt     # Creates an empty file named 'example.txt'
+mv example.txt renamed_example.txt   # Renames 'example.txt' to 'renamed_example.txt'
+ls                    # Lists contents of the directory
+cd ..                 # Moves back to the previous directory
+
+# 2. Viewing File Contents
+cat /etc/passwd       # Displays the entire content of the file
+head -n 5 /etc/passwd # Shows the first 5 lines
+tail -n 5 /etc/passwd # Shows the last 5 lines
+
+# 3. Searching for Patterns
+grep "root" /etc/passwd   # Searches for 'root' in the file and prints matching lines
+
+# 4. Zipping and Unzipping
+zip -r test_dir.zip test_dir        # Compresses 'test_dir' into test_dir.zip
+unzip test_dir.zip -d unzipped_dir  # Extracts contents of test_dir.zip into 'unzipped_dir'
+
+# 5. Downloading Files
+wget https://example.com/sample.txt  # Downloads sample.txt from the given URL
+
+# 6. Changing Permissions
+touch secure.txt     # Creates an empty file
+chmod 444 secure.txt # Changes file permissions to read-only for everyone
+ls -l secure.txt     # Displays file details including permissions
+
+# 7. Working with Environment Variables
+export MY_VAR="Hello, Linux!"  # Creates an environment variable
+echo $MY_VAR                   # Prints the value of MY_VAR
